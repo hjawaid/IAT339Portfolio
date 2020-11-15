@@ -1,0 +1,417 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* ATTRIBUTE CLASSES ------------------------------- */ 
+
+.margin-10{
+    height: 10px;
+    width:100%;
+    background-color: red;
+}
+
+.margin-14{
+    height: 14px;
+    width:100%;
+    background-color: red;
+}
+
+.margin-60{
+    height:30px;
+    width: 100%;
+    background-color: green;
+}
+
+.centered{
+    text-align: center;
+}
+
+
+/* WRAPPERS / CONTAINERS ------------------------------- */ 
+
+.largeContainer{
+    width:1022px;
+    margin: 0 auto;
+}
+
+.mediumContainer{
+    width:780px;
+    margin: 0 auto;
+}
+
+.titleSection{
+    width: 100%;
+    height: 100%;
+    background-color: #141313;
+    padding-top: 158px;
+}
+
+#messengerColor .projectInfo{
+    color: #E6F9FB;
+}
+
+/* FONTS ------------------------------- */ 
+
+@font-face {
+    font-family: "Whyte";
+    src: url('../fonts/Whyte-Book.otf') format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Whyte-Bold";
+    src: url('../fonts/Whyte-Bold.otf') format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Pressura Mono Light';
+    src: url('../fonts/GT-Pressura-Mono-Light.woff2') format('woff2'),
+        url('../fonts/GT-Pressura-Mono-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Pressura Mono';
+    src: url('../fonts/GTPressuraMono.woff2') format('woff2'),
+        url('../fonts/GTPressuraMono.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gt-walsheim-web';
+    src: url('../fonts/gt-walsheim-web.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.sectionDivider{
+    margin-top: 3em;
+    border-top: 2px solid black;
+    padding-top: 1em;
+}
+/* TEXT STYLING ------------------------------- */ 
+
+a{
+    text-decoration: none;
+}
+
+.sectionTitle{
+    font-family: 'Whyte-Bold';
+    font-size: 52px;
+    letter-spacing: -2.91px;
+    line-height: 58px;
+    font-weight: normal;
+
+    padding-top: 27px;
+
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+ 
+}
+
+.paragraphTitle{
+    font-family: 'Whyte-Bold';
+    font-size: 24px;
+    line-height: 32px;
+
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+
+    padding-top: 9px;
+}
+
+.listTitle{
+    font-family: 'GTPressuraMono';
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.pageSubheader{
+    font-family: 'gt-walsheim-web';
+    font-size: 26px;
+    font-weight: normal;
+    letter-spacing: -0.21px;
+    line-height: 32px;
+
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.subtitle{
+    font-family: 'GTPressuraMono';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+
+}
+
+
+.lightSubtitle{
+    font-family: 'GT Pressura Mono Light';
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+/*    color: white;*/
+
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+
+}
+
+
+.highlightedText span{
+    font-family: 'GTPressuraMono';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: rgba(227,255,0,0.3);
+
+
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+
+    width: 100%;
+
+}
+
+.highlight{
+    font-family: 'Whyte-Book';
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 46px;
+    letter-spacing: -0.2px;
+
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+
+    padding-top: 9px;
+
+}
+
+.bodyText{
+    font-family: 'gt-walsheim-web';
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+
+}
+
+.inTextLink{
+    text-decoration: underline;
+    color: black;
+}
+
+/* INTERACTIVE ELEMENTS ------------ */
+
+.button{
+    
+    padding-right: 35px;
+    padding-left: 40px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 32.5px;
+    font-family: 'GT Pressura Mono'; /*Put back in a.button if this messes things up*/
+    
+    font-size: 14px;
+    line-height: 18px;
+    
+    background-color: black;
+ /*   transition: background-color 0.2s;*/
+
+    display: inline-block;
+}
+
+a .button{
+    color: white; /* blue colors for links too */
+    text-decoration: none; /* no underline */
+    
+    font-size: 14px;
+
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.buttonArrow{
+    width: 10px;
+    height:6px;
+
+    margin-left: 25px;
+    position: relative;
+    bottom: 1px;
+}
+
+.centerButtonContainer{
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    /*border: 2px solid red;*/
+}
+
+.regularButtonContainer{
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    /*border: 2px solid red;*/
+}
+
+.reverseButtonContainer{
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    background-color: black;
+    /*border: 2px solid red;*/
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.reverseButton{
+    
+    padding-right: 35px;
+    padding-left: 40px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 32.5px;
+    font-family: 'GT Pressura Mono'; /*Put back in a.button if this messes things up*/
+    color: black;
+    
+    font-size: 14px;
+    line-height: 18px;
+    
+    background-color: white;
+ /*   transition: background-color 0.2s;*/
+
+    display: inline-block;
+}
+
+/* MEDIA ------------ */
+
+.imageCaption{
+    text-align: center;
+    margin-top: 14px;
+}
+
+.imageContainerFull{
+    width: 100%;
+    height: auto;
+
+}
+
+.responsiveFullImage{
+    width: 100%;
+    height:auto;
+    padding: 0;
+    margin: 0;
+}
+
+.imageContainerLarge{
+    text-align: center;
+}
+
+.responsiveLargeImage{
+    width: 1022px;
+}
+
+.imageContainerMedium{
+    text-align: center;
+}
+.responsiveMediumImage{
+    width: 780px;
+}
+
+.imageContainerSmall{
+    text-align: center;
+}
+.responsiveSmallImage{
+    width: 300px;
+
+}
+
+/* PROJECT PAGE TITLE SECTION------------ */
+.projectInfo{
+    color:white;
+}
+
+.projectTitle{
+}
+
+.projectSubtitle{
+    margin-top: 5px;
+}
+
+#titleButton{
+    margin-top: 42px;
+}
+
+.projectDetailsContainer{
+    display: inline-flex;
+
+    width: 100%;
+    height: 100%;
+
+    margin-top: 100px;
+    margin-bottom: 60px;
+
+}
+
+.projectRole{
+    margin-right: 20%;
+}
+
+
+
+/* MEDIA QUERIES ------------ */
+
+@media screen and (max-width: 1100px){ /* For elements within 1022px container*/
+.responsiveLargeImage{
+    width: 780px;
+    height: auto;
+    }
+
+.largeContainer{
+        width: 80%;
+    }
+}
+
+
+
+@media screen and (max-width: 800px){ /* For elements within 780px container*/
+.responsiveSmallImage{
+    width: 40%;
+    height: auto;
+}
+
+.responsiveMediumImage{
+    width: 80%;
+    height: auto;
+    }
+
+.responsiveLargeImage{
+    width: 80%;
+    height: auto;
+    }
+
+}
+
+
+
+
