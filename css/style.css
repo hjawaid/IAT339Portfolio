@@ -20,6 +20,14 @@ body{
 .homePage{
 
 }
+
+.codeSection{
+    padding: 3em;
+    background-color: lightgrey;
+    width:1022px;
+    margin: 0 auto;
+
+}
 /* ATTRIBUTE CLASSES --------------------------------------------------------------- */ 
 
 .margin-10{
@@ -120,6 +128,7 @@ body{
     margin: 0 auto;
     margin-top: 130px;
     text-align: center;
+    background-color: black;
 
 }
 
@@ -177,11 +186,13 @@ body{
     background-color: #141313;
     position: fixed;
     top:0;
+  z-index: 100;
 }
 
 .navBar{
     display: inline;
     color: white;
+
 }
 
 .navBar ul{
@@ -665,6 +676,10 @@ a .button{
     .responsiveVideoLarge{
         width:100%;
         height:auto;
+    }
+
+    .codeSection{
+        width: 80%;
     }
 
 }
