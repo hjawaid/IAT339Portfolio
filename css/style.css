@@ -163,6 +163,8 @@ body{
      text-align: center;
      margin: 0 auto;
      margin-bottom: 50px;
+    padding-left: 1.5em;
+     padding-right: 1.5em;
 
 }
 
@@ -456,6 +458,10 @@ a:visited{
     display: inline-block;
 }
 
+.button:hover{
+    opacity: 0.8;
+}
+
 a .button{
     color: white; /* blue colors for links too */
     text-decoration: none; /* no underline */
@@ -659,6 +665,68 @@ a .button{
     margin-right: 20%;
 }
 
+/* FOOTER --------------------------- */ 
+
+.contactFooter{
+    width: 100%;
+    height: 100%;
+    
+
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.projectPageFooter{
+    margin-top: 80px;
+}
+#homeFooter{
+ margin-top: 50px;
+}
+
+
+
+.igLogo{
+    width: 21px;
+    height: 21px;
+    margin-right: 22.5px;
+
+    
+}
+.linkedInContactLink{
+
+}
+.linkedInLogo{
+    width: 22.05px;
+    height: 21px;
+    margin-left: 22.5px;
+    margin-right: 22.5px;
+
+    
+}
+
+.mailLogo{
+    width: 27px;
+    height: 19px;
+    margin-left: 22.5px;
+    margin-right: 22.5px;
+    
+}
+
+.resumeLink{
+    font-size: 1.25em;  /*52px;*/
+    font-family: Whyte;
+    color: white;
+    margin-left: 22.5px;
+    padding-bottom: 5px;
+
+}
+
+.resumeLink a{
+    text-decoration: none;
+    color: white;
+}
+
 
 
 /* MEDIA QUERIES ------------ */
@@ -855,18 +923,24 @@ a .button{
 
     .aboutMeSection{
         text-align: left;
-       padding-left: 1.5em;
+        padding-left: 1.5em;
         padding-right: 1.5em;
- 
+
+    }
+
+    .bioText{
+        font-size: 26px;
+        line-height: 38px;
     }
 
     .centerButtonContainer{
         text-align: left;
-        padding-left: 1.5em;
+        margin-left: 1.5em;
+        width: auto;
     }
 
     .thumbnailImage{
-   width: 100%;
+   max-width: 100%;
    height: auto;
    background-color: red;
 /*   float: right;*/
@@ -874,7 +948,11 @@ a .button{
 
     .thumbnailDetailsContainer{
         text-align: left;
-        margin-left: 1.5em;
+
+    }
+
+    .thumbnailTextContainer{
+        padding-left: 1.5em;
     }
 
 }
