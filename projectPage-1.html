@@ -9,6 +9,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
+
 </head>
 <body>
 
@@ -98,7 +99,12 @@
 				</section>
 					<div class="margin-60"></div>
 						<div class="imageContainerFull"> <!-- WIDTH IS 1022 -->
-						<img class="responsiveFullImage" src="img/memoriesControl.png" alt="">
+					  	<!-- <img class="responsiveFullImage" src="img/memoriesControl.png" alt=""> -->
+					  	<picture>
+					  		<source media="(max-width: 700px)" srcset="img/memoriesControlVertical.png">
+					  		<img class="responsiveFullImage" src="img/memoriesControl.png" alt="">
+					  	</picture>
+					
 					</div>
 					<div class="margin-60"></div>
 				<section class="largeContainer centered">

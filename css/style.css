@@ -262,7 +262,8 @@ body{
 @font-face {
     font-family: 'GT Pressura Mono';
     src: url('../fonts/GTPressuraMono.woff2') format('woff2'),
-        url('../fonts/GTPressuraMono.woff') format('woff');
+        url('../fonts/GTPressuraMono.woff') format('woff'),
+        url('../fonts/GTPressuraMono.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -670,8 +671,6 @@ a .button{
 .contactFooter{
     width: 100%;
     height: 100%;
-    
-
     margin-bottom: 40px;
     display: flex;
     justify-content: center;
