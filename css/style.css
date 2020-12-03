@@ -262,8 +262,7 @@ body{
 @font-face {
     font-family: 'GT Pressura Mono';
     src: url('../fonts/GTPressuraMono.woff2') format('woff2'),
-        url('../fonts/GTPressuraMono.woff') format('woff'),
-        url('../fonts/GTPressuraMono.otf') format('opentype');
+        url('../fonts/GTPressuraMono.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -274,6 +273,7 @@ body{
     font-weight: normal;
     font-style: normal;
 }
+
 
 
 .sectionDivider{
