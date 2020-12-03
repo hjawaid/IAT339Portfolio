@@ -1,7 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;600&display=swap");
+
 /* VARIABLES--------------------- */
+
 /* COLORS */
+
+$backgroundColorLight: #F7F9FB;
+$backgroundColorDark: #0D0D0D;
+$codeBlockBackground: lightgrey;
+
+$projectOneThemeColor: #E6F9FB;
+$projectTwoThemeColor: #E6FBEA;
+
 /* MIXIMS */
+
+@mixin heroTitleStyle{
+  line-height: 1.153;
+  font-size: 3.25em;
+  font-family: Whyte, Sans-Serif;
+  font-weight: normal;
+  color: white;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+
+@mixin buttonArrowStyle {
+  width: 10px;
+  height: 6px;
+  position: relative;
+  bottom: 1px;
+}
+
+@mixin buttonStyle{
+  padding-right: 35px;
+  padding-left: 40px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-radius: 32.5px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  line-height: 18px;
+  display: inline-block;
+}
+
 /* END OF VARIABLES--------------------- */
 * {
   margin: 0;
@@ -9,20 +50,20 @@
 }
 
 body {
-  background-color: #0D0D0D;
+  background-color: $backgroundColorDark;
 }
 
 .projectPage {
-  background-color: #F7F9FB;
+  background-color: $backgroundColorLight;
 }
 
 .styleGuidePage {
-  background-color: #F7F9FB;
+  background-color: $backgroundColorLight;
 }
 
 .codeSection {
   padding: 3em;
-  background-color: lightgrey;
+  background-color: $codeBlockBackground;
   width: 1022px;
   margin: 0 auto;
 }
@@ -71,15 +112,15 @@ body {
 }
 
 .styleGuideReverseBackground {
-  background-color: #0D0D0D;
+  background-color: $backgroundColorDark;
 }
 
 #musicWorkflowColor .projectInfo {
-  color: #E6FBEA;
+  color: $projectTwoThemeColor;
 }
 
 #messengerColor .projectInfo {
-  color: #E6F9FB;
+  color: $projectOneThemeColor;
 }
 
 .largeContainer {
@@ -96,7 +137,7 @@ body {
   width: 100%;
   height: 100%;
   padding-top: 188px;
-  background-color: #0D0D0D;
+  background-color: $backgroundColorDark;
 }
 
 .heroTitleContainer {
@@ -113,7 +154,7 @@ body {
   margin: 0 auto;
   margin-top: 130px;
   text-align: center;
-  background-color: #0D0D0D;
+  background-color: $backgroundColorDark;
 }
 
 .projectContainer {
@@ -150,7 +191,7 @@ body {
 
 #facebookDesignChallenges {
   background-color: #19214D;
-  color: #E6F9FB;
+  color: $projectOneThemeColor;
 }
 
 .navContainer {
@@ -198,34 +239,29 @@ body {
   src: url("../fonts/Whyte-Book.otf") format("opentype");
   font-style: normal;
 }
-
 @font-face {
   font-family: "Whyte-Bold";
   src: url("../fonts/Whyte-Bold.otf") format("opentype");
   font-style: normal;
 }
-
 @font-face {
   font-family: "GT Pressura Mono Light";
   src: url("../fonts/GT-Pressura-Mono-Light.woff2") format("woff2"), url("../fonts/GT-Pressura-Mono-Light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "GT Pressura Mono";
   src: url("../fonts/GTPressuraMono.woff2") format("woff2"), url("../fonts/GTPressuraMono.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "gt-walsheim-web";
   src: url("../fonts/gt-walsheim-web.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 .sectionDivider {
   margin-top: 3em;
   border-top: 2px solid black;
@@ -242,13 +278,7 @@ a:visited {
 }
 
 .heroTitle {
-  line-height: 1.153;
-  font-size: 3.25em;
-  font-family: Whyte, Sans-Serif;
-  font-weight: normal;
-  color: white;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
+  @include heroTitleStyle;
 }
 
 .projectThumbnailTitle {
@@ -360,15 +390,7 @@ a:visited {
 }
 
 .button {
-  padding-right: 35px;
-  padding-left: 40px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  border-radius: 32.5px;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 14px;
-  line-height: 18px;
-  display: inline-block;
+  @include buttonStyle;
   background-color: black;
 }
 
@@ -385,19 +407,14 @@ a .button {
 }
 
 .buttonArrow {
-  width: 10px;
-  height: 6px;
-  position: relative;
-  bottom: 1px;
-  margin-left: 25px;
+  @include buttonArrowStyle;
+  margin-left:25px;
 }
 
 .backButtonArrow {
-  width: 10px;
-  height: 6px;
-  position: relative;
-  bottom: 1px;
+  @include buttonArrowStyle;
   margin-right: 25px;
+ 
 }
 
 .centerButtonContainer {
@@ -424,15 +441,7 @@ a .button {
 }
 
 .reverseButton {
-  padding-right: 35px;
-  padding-left: 40px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  border-radius: 32.5px;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 14px;
-  line-height: 18px;
-  display: inline-block;
+  @include buttonStyle;
   color: black;
   background-color: white;
 }
@@ -548,24 +557,25 @@ a .button {
   margin-bottom: 20px;
 }
 
-.contactRow {
+.contactRow{
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
-.linkOutRow {
+.linkOutRow{
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
-.assignmentLink {
+.assignmentLink{
   font-family: "IBM Plex Mono", monospace;
   font-size: 14px;
   line-height: 18px;
   color: white;
+
 }
 
 .projectPageFooter {
@@ -614,81 +624,101 @@ a .button {
     width: 780px;
     height: auto;
   }
+
   .largeContainer {
     width: 80%;
   }
+
   .responsiveVideoLarge {
     width: 100%;
     height: auto;
   }
+
   .codeSection {
     width: 80%;
   }
 }
-
 @media screen and (max-width: 815px) {
   .responsiveSmallImage {
     width: 40%;
     height: auto;
   }
+
   .responsiveMediumImage {
     width: 80%;
     height: auto;
   }
+
   .responsiveLargeImage {
     width: 80%;
     height: auto;
   }
+
   .navBar ul {
     width: 80%;
     text-align: center;
   }
+
   .nextPageNav {
     float: none;
   }
+
   .navBar img {
     display: none;
   }
+
   .navBar li {
     margin-left: 32px;
     margin-right: 32px;
   }
+
   .mediumContainer {
     width: 80%;
   }
+
   .sectionTitle {
     font-size: 44px;
     line-height: 50px;
   }
+
   .pageSubheader {
     font-size: 22px;
     line-height: 26px;
   }
+
   .highlight {
     font-size: 32px;
     line-height: 42px;
   }
+
   .centered {
     text-align: left;
   }
+
   .margin-160 {
     height: 100px;
   }
+
   .margin-100 {
     height: 60px;
   }
+
   .margin-60 {
     height: 40px;
   }
+
   .margin-30 {
     height: 20px;
   }
+
   .margin-20 {
     height: 14px;
   }
+
   .margin-14 {
     height: 10px;
   }
+
   .paragraphTitle {
     font-family: "Whyte-Bold";
     font-size: 24px;
@@ -697,6 +727,7 @@ a .button {
     -webkit-font-smoothing: antialiased !important;
     padding-top: 9px;
   }
+
   .listTitle {
     font-family: "IBM Plex Mono", monospace;
     font-weight: normal;
@@ -705,10 +736,12 @@ a .button {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
   }
+
   .subtitle {
     font-size: 12px;
     line-height: 16px;
   }
+
   .lightSubtitle {
     font-family: "GT Pressura Mono Light";
     font-size: 14px;
@@ -717,9 +750,11 @@ a .button {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
   }
+
   .highlightedText {
     text-align: center;
   }
+
   .highlightedText span {
     font-family: "IBM Plex Mono", monospace;
     font-weight: normal;
@@ -731,42 +766,49 @@ a .button {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 700px) {
   .projectContainer {
     width: 100%;
   }
+
   .heroTitle {
     font-size: 26px;
     text-align: left;
     line-height: 38px;
   }
+
   .heroTitleContainer {
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
+
   .aboutMeSection {
     text-align: left;
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
+
   .bioText {
     font-size: 26px;
     line-height: 38px;
   }
+
   .centerButtonContainer {
     text-align: left;
     margin-left: 1.5em;
     width: auto;
   }
+
   .thumbnailImage {
     max-width: 100%;
     height: auto;
     background-color: red;
   }
+
   .thumbnailDetailsContainer {
     text-align: left;
   }
+
   .thumbnailTextContainer {
     padding-left: 1.5em;
   }
