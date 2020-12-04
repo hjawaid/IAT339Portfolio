@@ -3,803 +3,242 @@
 /* COLORS */
 /* MIXIMS */
 /* END OF VARIABLES--------------------- */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #0D0D0D;
-}
-
-.projectPage {
-  background-color: #F7F9FB;
-}
-
-.styleGuidePage {
-  background-color: #F7F9FB;
-}
-
-.citationsPage {
-  background-color: #F7F9FB;
-}
-
-.codeSection {
-  padding: 3em;
-  background-color: lightgrey;
-  width: 1022px;
-  margin: 0 auto;
-}
-
-.margin-10 {
-  height: 10px;
-  width: 100%;
-}
-
-.margin-20 {
-  height: 20px;
-  width: 100%;
-}
-
-.margin-14 {
-  height: 14px;
-  width: 100%;
-}
-
-.margin-30 {
-  height: 30px;
-  width: 100%;
-}
-
-.margin-60 {
-  height: 60px;
-  width: 100%;
-}
-
-.margin-100 {
-  height: 100px;
-  width: 100%;
-}
-
-.margin-160 {
-  height: 160px;
-  width: 100%;
-}
-
-.extraPaddingTop {
-  padding-top: 35px;
-}
-
-.centered {
-  text-align: center;
-}
-
-.styleGuideReverseBackground {
-  background-color: #0D0D0D;
-}
-
-#musicWorkflowColor .projectInfo {
-  color: #E6FBEA;
-}
-
-#messengerColor .projectInfo {
-  color: #E6F9FB;
-}
-
-.largeContainer {
-  width: 1022px;
-  margin: 0 auto;
-}
-
-.mediumContainer {
-  width: 780px;
-  margin: 0 auto;
-}
-
-.heroSection {
-  width: 100%;
-  height: 100%;
-  padding-top: 188px;
-  background-color: #0D0D0D;
-}
-
-.heroTitleContainer {
-  margin: 0 auto;
-  text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
-  max-width: 1068px;
-}
-
-.allProjectsContainer {
-  max-width: 1236px;
-  height: 100%;
-  margin: 0 auto;
-  margin-top: 130px;
-  text-align: center;
-  background-color: #0D0D0D;
-}
-
-.projectContainer {
-  position: relative;
-  width: 618px;
-  display: inline-block;
-}
-
-.thumbnailDetailsContainer {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  color: white;
-  margin-top: 48px;
-  margin-bottom: 100px;
-}
-
-.aboutMeSection {
-  max-width: 1068px;
-  color: white;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-}
-
-.titleSection {
-  width: 100%;
-  height: 100%;
-  background-color: #141313;
-  padding-top: 158px;
-}
-
-#facebookDesignChallenges {
-  background-color: #19214D;
-  color: #E6F9FB;
-}
-
-.navContainer {
-  width: 100%;
-  background-color: #141313;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-}
-
-.navBar {
-  display: inline;
-  color: white;
-}
-
-.navBar ul {
-  width: 788px;
-  margin: 0 auto;
-  text-decoration: none;
-  list-style: none;
-}
-
-.navBar li {
-  padding-top: 28px;
-  padding-bottom: 28px;
-  margin-right: 64px;
-  display: inline-block;
-  font-family: "GT Pressura Mono";
-  font-size: 14px;
-  line-height: 18px;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-}
-
-.navBar li:hover {
-  text-decoration: underline;
-}
-
-.nextPageNav {
-  float: right;
-}
-
-@font-face {
-  font-family: "Whyte";
-  src: url("../fonts/Whyte-Book.otf") format("opentype");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Whyte-Bold";
-  src: url("../fonts/Whyte-Bold.otf") format("opentype");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "GT Pressura Mono Light";
-  src: url("../fonts/GT-Pressura-Mono-Light.woff2") format("woff2"), url("../fonts/GT-Pressura-Mono-Light.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "GT Pressura Mono";
-  src: url("../fonts/GTPressuraMono.woff2") format("woff2"), url("../fonts/GTPressuraMono.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "gt-walsheim-web";
-  src: url("../fonts/gt-walsheim-web.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-.sectionDivider {
-  margin-top: 3em;
-  border-top: 2px solid black;
-  padding-top: 1em;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:visited {
-  color: inherit;
-}
-
-.heroTitle {
-  line-height: 1.153;
-  font-size: 3.25em;
-  font-family: "Whyte", Verdana, Sans-Serif;
-  font-weight: normal;
-  color: white;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-}
-
-.projectThumbnailTitle {
-  font-family: "Whyte-Bold", Verdana, Sans-Serif;
-  font-size: 32px;
-  font-weight: normal;
-  line-height: 46px;
-  padding-top: 17px;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-}
-
-.sectionTitle {
-  font-family: "Whyte-Bold", Verdana, Sans-Serif;
-  font-size: 52px;
-  letter-spacing: -2.91px;
-  line-height: 58px;
-  font-weight: normal;
-  padding-top: 27px;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-}
-
-.paragraphTitle {
-  font-family: "Whyte-Bold", Verdana, Sans-Serif;
-  font-size: 24px;
-  line-height: 32px;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-  padding-top: 9px;
-}
-
-.listTitle {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 34px;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-}
-
-.pageSubheader {
-  font-family: "gt-walsheim-web", Helvetica, Sans Serif;
-  font-size: 26px;
-  font-weight: normal;
-  letter-spacing: -0.21px;
-  line-height: 32px;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-}
-
-.subtitle {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-}
-
-.lightSubtitle {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 14px;
-  font-weight: 200;
-  line-height: 18px;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-}
-
-.highlightedText {
-  text-align: center;
-}
-
-.highlightedText span {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  background-color: rgba(227, 255, 0, 0.3);
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-  width: 100%;
-}
-
-.highlight {
-  font-family: "Whyte-Book", Verdana, Sans-Serif;
-  font-weight: normal;
-  font-size: 37px;
-  line-height: 46px;
-  letter-spacing: -0.2px;
-  text-align: center;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-  padding-top: 9px;
-}
-
-.bodyText {
-  font-family: "gt-walsheim-web", Helvetica, Sans Serif;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 34px;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-}
-
-.inTextLink {
-  text-decoration: underline;
-  color: black;
-}
-
-.button {
-  padding-right: 35px;
-  padding-left: 40px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  border-radius: 32.5px;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 14px;
-  line-height: 18px;
-  display: inline-block;
-  background-color: black;
-}
-
-.button:hover {
-  opacity: 0.8;
-}
-
-a .button {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-}
-
-.buttonArrow {
-  width: 10px;
-  height: 6px;
-  position: relative;
-  bottom: 1px;
-  margin-left: 25px;
-}
-
-.backButtonArrow {
-  width: 10px;
-  height: 6px;
-  position: relative;
-  bottom: 1px;
-  margin-right: 25px;
-}
-
-.centerButtonContainer {
-  display: inline-block;
-  text-align: center;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.regularButtonContainer {
-  display: inline-block;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.reverseButtonContainer {
-  display: inline-block;
-  margin: 0 auto;
-  width: 100%;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.reverseButton {
-  padding-right: 35px;
-  padding-left: 40px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  border-radius: 32.5px;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 14px;
-  line-height: 18px;
-  display: inline-block;
-  color: black;
-  background-color: white;
-}
-
-.reverseButton:hover {
-  background-color: #C2C2C2;
-}
-
-#contactIconsContainer {
-  width: 100%;
-  height: 100%;
-  margin-top: 117px;
-  margin-bottom: 40px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-#contactButton {
-  color: black;
-  margin-top: 29px;
-  display: inline-block;
-}
-
-.imageCaption {
-  margin: 0 auto;
-  margin-top: 14px;
-  width: 40%;
-  text-align: center;
-}
-
-.captionContainer {
-  width: 100%;
-}
-
-.imageContainerFull {
-  width: 100%;
-  height: auto;
-}
-
-.responsiveFullImage {
-  width: 100%;
-  height: auto;
-  padding: 0;
-  margin: 0;
-}
-
-.imageContainerLarge {
-  text-align: center;
-}
-
-.responsiveLargeImage {
-  width: 1022px;
-}
-
-.imageContainerMedium {
-  text-align: center;
-}
-
-.responsiveMediumImage {
-  width: 780px;
-}
-
-.imageContainerSmall {
-  text-align: center;
-}
-
-.responsiveSmallImage {
-  width: 300px;
-}
-
-iframe {
-  border: none;
-}
-
-.responsiveVideoLarge {
-  width: 1022px;
-  height: 575px;
-}
-
-.videoContainerLarge {
-  text-align: center;
-}
-
-.thumbnailImage {
-  width: 618px;
-  height: 402px;
-}
-
-.projectInfo {
-  color: white;
-}
-
-.projectSubtitle {
-  margin-top: 5px;
-}
-
-.titleButton {
-  margin-top: 42px;
-}
-
-.projectDetailsContainer {
-  display: inline-flex;
-  width: 100%;
-  height: 100%;
-  margin-top: 100px;
-  margin-bottom: 60px;
-}
-
-.projectRole {
-  margin-right: 20%;
-}
-
-.contactFooter {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 20px;
-  padding-top: 40px;
-  background-color: #0D0D0D;
-}
-
-.contactRow {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-@media screen and (max-width: 700px) {
-  .contactRow {
-    justify-content: flex-start;
-  }
-}
-
-.linkOutRow {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin-top: 20px;
-}
-
-@media screen and (max-width: 700px) {
-  .linkOutRow {
-    justify-content: flex-start;
-  }
-}
-
-.assignmentLink {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 14px;
-  line-height: 18px;
-  color: white;
-  margin-left: 22.5px;
-  margin-right: 22.5px;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-}
-
-.assignmentLink:hover {
-  text-decoration: underline;
-}
-
-.projectPageFooter {
-  margin-top: 80px;
-}
-
-.igLogo {
-  width: 21px;
-  height: 21px;
-  margin-right: 22.5px;
-}
-
-.linkedInLogo {
-  width: 22.05px;
-  height: 21px;
-  margin-left: 22.5px;
-  margin-right: 22.5px;
-}
-
-.mailLogo {
-  width: 27px;
-  height: 19px;
-  margin-left: 22.5px;
-  margin-right: 22.5px;
-}
-
-.resumeLink {
-  font-size: 1.25em;
-  font-family: "Whyte", Verdana, Sans-Serif;
-  color: white;
-  margin-left: 22.5px;
-  padding-bottom: 5px;
-}
-
-.resumeLink a {
-  text-decoration: none;
-  color: white;
-}
-
-@media screen and (max-width: 1100px) {
-  .responsiveLargeImage {
-    width: 780px;
-    height: auto;
-  }
-  .largeContainer {
-    width: 80%;
-  }
-  .responsiveVideoLarge {
-    width: 100%;
-    height: auto;
-  }
-  .codeSection {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 815px) {
-  .responsiveSmallImage {
-    width: 40%;
-    height: auto;
-  }
-  .responsiveMediumImage {
-    width: 80%;
-    height: auto;
-  }
-  .responsiveLargeImage {
-    width: 80%;
-    height: auto;
-  }
-  .navBar ul {
-    width: 80%;
-    text-align: center;
-  }
-  .nextPageNav {
-    float: none;
-  }
-  .navBar img {
-    display: none;
-  }
-  .navBar li {
-    margin-left: 32px;
-    margin-right: 32px;
-  }
-  .mediumContainer {
-    width: 80%;
-  }
-  .sectionTitle {
-    font-size: 44px;
-    line-height: 50px;
-  }
-  .pageSubheader {
-    font-size: 22px;
-    line-height: 26px;
-  }
-  .highlight {
-    font-size: 32px;
-    line-height: 42px;
-  }
-  .centered {
-    text-align: left;
-  }
-  .margin-160 {
-    height: 100px;
-  }
-  .margin-100 {
-    height: 60px;
-  }
-  .margin-60 {
-    height: 40px;
-  }
-  .margin-30 {
-    height: 20px;
-  }
-  .margin-20 {
-    height: 14px;
-  }
-  .margin-14 {
-    height: 10px;
-  }
-  .paragraphTitle {
-    font-family: "Whyte-Bold", Verdana, Sans-Serif;
-    font-size: 24px;
-    line-height: 32px;
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-    padding-top: 9px;
-  }
-  .listTitle {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 34px;
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-  }
-  .subtitle {
-    font-size: 12px;
-    line-height: 16px;
-  }
-  .lightSubtitle {
-    font-family: "GT Pressura Mono Light";
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 18px;
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-  }
-  .highlightedText {
-    text-align: center;
-  }
-  .highlightedText span {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    background-color: rgba(227, 255, 0, 0.3);
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .projectContainer {
-    width: 100%;
-  }
-  .heroTitle {
-    font-size: 26px;
-    text-align: left;
-    line-height: 38px;
-  }
-  .heroTitleContainer {
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-  }
-  .aboutMeSection {
-    text-align: left;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-  }
-  .bioText {
-    font-size: 26px;
-    line-height: 38px;
-  }
-  .centerButtonContainer {
-    text-align: left;
-    margin-left: 1.5em;
-    width: auto;
-  }
-  .thumbnailImage {
-    max-width: 100%;
-    height: auto;
-    background-color: red;
-  }
-  .thumbnailDetailsContainer {
-    text-align: left;
-  }
-  .thumbnailTextContainer {
-    padding-left: 1.5em;
-  }
-  .igLogo {
-    margin-left: 1.5em;
-  }
-  .imageCaption {
-    width: 80%;
-  }
-}
+* { margin: 0; padding: 0; }
+
+body { background-color: #0D0D0D; }
+
+.projectPage { background-color: #F7F9FB; }
+
+.styleGuidePage { background-color: #F7F9FB; }
+
+.citationsPage { background-color: #F7F9FB; }
+
+.codeSection { padding: 3em; background-color: lightgrey; width: 1022px; margin: 0 auto; }
+
+.margin-10 { height: 10px; width: 100%; }
+
+.margin-20 { height: 20px; width: 100%; }
+
+.margin-14 { height: 14px; width: 100%; }
+
+.margin-30 { height: 30px; width: 100%; }
+
+.margin-60 { height: 60px; width: 100%; }
+
+.margin-100 { height: 100px; width: 100%; }
+
+.margin-160 { height: 160px; width: 100%; }
+
+.extraPaddingTop { padding-top: 35px; }
+
+.centered { text-align: center; }
+
+.styleGuideReverseBackground { background-color: #0D0D0D; }
+
+#musicWorkflowColor .projectInfo { color: #E6FBEA; }
+
+#messengerColor .projectInfo { color: #E6F9FB; }
+
+.largeContainer { width: 1022px; margin: 0 auto; }
+
+.mediumContainer { width: 780px; margin: 0 auto; }
+
+.heroSection { width: 100%; height: 100%; padding-top: 188px; background-color: #0D0D0D; }
+
+.heroTitleContainer { margin: 0 auto; text-align: center; padding-left: 40px; padding-right: 40px; max-width: 1068px; }
+
+.allProjectsContainer { max-width: 1236px; height: 100%; margin: 0 auto; margin-top: 130px; text-align: center; background-color: #0D0D0D; }
+
+.projectContainer { position: relative; width: 618px; display: inline-block; }
+
+.thumbnailDetailsContainer { position: relative; display: inline-block; width: 100%; color: white; margin-top: 48px; margin-bottom: 100px; }
+
+.aboutMeSection { max-width: 1068px; color: white; text-align: center; margin: 0 auto; margin-bottom: 50px; padding-left: 1.5em; padding-right: 1.5em; }
+
+.titleSection { width: 100%; height: 100%; background-color: #141313; padding-top: 158px; }
+
+#facebookDesignChallenges { background-color: #19214D; color: #E6F9FB; }
+
+.navContainer { width: 100%; background-color: #141313; position: fixed; top: 0; z-index: 100; }
+
+.navBar { display: inline; color: white; }
+
+.navBar ul { width: 788px; margin: 0 auto; text-decoration: none; list-style: none; }
+
+.navBar li { padding-top: 28px; padding-bottom: 28px; margin-right: 64px; display: inline-block; font-family: "GT Pressura Mono"; font-size: 14px; line-height: 18px; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
+
+.navBar li:hover { text-decoration: underline; }
+
+.nextPageNav { float: right; }
+
+@font-face { font-family: "Whyte"; src: url("../fonts/Whyte-Book.otf") format("opentype"); font-style: normal; }
+
+@font-face { font-family: "Whyte-Bold"; src: url("../fonts/Whyte-Bold.otf") format("opentype"); font-style: normal; }
+
+@font-face { font-family: "GT Pressura Mono Light"; src: url("../fonts/GT-Pressura-Mono-Light.woff2") format("woff2"), url("../fonts/GT-Pressura-Mono-Light.woff") format("woff"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: "GT Pressura Mono"; src: url("../fonts/GTPressuraMono.woff2") format("woff2"), url("../fonts/GTPressuraMono.woff") format("woff"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: "gt-walsheim-web"; src: url("../fonts/gt-walsheim-web.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+.sectionDivider { margin-top: 3em; border-top: 2px solid black; padding-top: 1em; }
+
+a { text-decoration: none; color: inherit; }
+
+a:visited { color: inherit; }
+
+.heroTitle { line-height: 1.153; font-size: 3.25em; font-family: "Whyte", Verdana, Sans-Serif; font-weight: normal; color: white; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
+
+.projectThumbnailTitle { font-family: "Whyte-Bold", Verdana, Sans-Serif; font-size: 32px; font-weight: normal; line-height: 46px; padding-top: 17px; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
+
+.sectionTitle { font-family: "Whyte-Bold", Verdana, Sans-Serif; font-size: 52px; letter-spacing: -2.91px; line-height: 58px; font-weight: normal; padding-top: 27px; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
+
+.paragraphTitle { font-family: "Whyte-Bold", Verdana, Sans-Serif; font-size: 24px; line-height: 32px; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; padding-top: 9px; }
+
+.listTitle { font-family: "IBM Plex Mono", monospace; font-weight: normal; font-size: 20px; line-height: 34px; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
+
+.pageSubheader { font-family: "gt-walsheim-web", Helvetica, Sans Serif; font-size: 26px; font-weight: normal; letter-spacing: -0.21px; line-height: 32px; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
+
+.subtitle { font-family: "IBM Plex Mono", monospace; font-weight: normal; font-size: 14px; line-height: 18px; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
+
+.lightSubtitle { font-family: "IBM Plex Mono", monospace; font-size: 14px; font-weight: 200; line-height: 18px; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
+
+.highlightedText { text-align: center; }
+
+.highlightedText span { font-family: "IBM Plex Mono", monospace; font-weight: normal; font-size: 14px; line-height: 18px; background-color: rgba(227, 255, 0, 0.3); text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; width: 100%; }
+
+.highlight { font-family: "Whyte-Book", Verdana, Sans-Serif; font-weight: normal; font-size: 37px; line-height: 46px; letter-spacing: -0.2px; text-align: center; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; padding-top: 9px; }
+
+.bodyText { font-family: "gt-walsheim-web", Helvetica, Sans Serif; font-weight: normal; font-size: 20px; line-height: 34px; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
+
+.inTextLink { text-decoration: underline; color: black; }
+
+.button { padding-right: 35px; padding-left: 40px; padding-top: 18px; padding-bottom: 18px; border-radius: 32.5px; font-family: "IBM Plex Mono", monospace; font-size: 14px; line-height: 18px; display: inline-block; background-color: black; }
+
+.button:hover { opacity: 0.8; }
+
+a .button { color: white; text-decoration: none; font-size: 14px; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
+
+.buttonArrow { width: 10px; height: 6px; position: relative; bottom: 1px; margin-left: 25px; }
+
+.backButtonArrow { width: 10px; height: 6px; position: relative; bottom: 1px; margin-right: 25px; }
+
+.centerButtonContainer { display: inline-block; text-align: center; margin: 0 auto; width: 100%; }
+
+.regularButtonContainer { display: inline-block; margin: 0 auto; width: 100%; }
+
+.reverseButtonContainer { display: inline-block; margin: 0 auto; width: 100%; padding-top: 1em; padding-bottom: 1em; margin-top: 1em; margin-bottom: 1em; }
+
+.reverseButton { padding-right: 35px; padding-left: 40px; padding-top: 18px; padding-bottom: 18px; border-radius: 32.5px; font-family: "IBM Plex Mono", monospace; font-size: 14px; line-height: 18px; display: inline-block; color: black; background-color: white; }
+
+.reverseButton:hover { background-color: #C2C2C2; }
+
+#contactIconsContainer { width: 100%; height: 100%; margin-top: 117px; margin-bottom: 40px; display: inline-flex; justify-content: center; align-items: flex-end; }
+
+#contactButton { color: black; margin-top: 29px; display: inline-block; }
+
+.imageCaption { margin: 0 auto; margin-top: 14px; width: 40%; text-align: center; }
+
+.captionContainer { width: 100%; }
+
+.imageContainerFull { width: 100%; height: auto; }
+
+.responsiveFullImage { width: 100%; height: auto; padding: 0; margin: 0; }
+
+.imageContainerLarge { text-align: center; }
+
+.responsiveLargeImage { width: 1022px; }
+
+.imageContainerMedium { text-align: center; }
+
+.responsiveMediumImage { width: 780px; }
+
+.imageContainerSmall { text-align: center; }
+
+.responsiveSmallImage { width: 300px; }
+
+iframe { border: none; }
+
+.responsiveVideoLarge { width: 1022px; height: 575px; }
+
+.videoContainerLarge { text-align: center; }
+
+.thumbnailImage { width: 618px; height: 402px; }
+
+.projectInfo { color: white; }
+
+.projectSubtitle { margin-top: 5px; }
+
+.titleButton { margin-top: 42px; }
+
+.projectDetailsContainer { display: inline-flex; width: 100%; height: 100%; margin-top: 100px; margin-bottom: 60px; }
+
+.projectRole { margin-right: 20%; }
+
+.contactFooter { width: 100%; height: 100%; padding-bottom: 20px; padding-top: 40px; background-color: #0D0D0D; }
+
+.contactRow { display: flex; justify-content: center; align-items: flex-end; }
+
+@media screen and (max-width: 700px) { .contactRow { justify-content: flex-start; } }
+
+.linkOutRow { display: flex; justify-content: center; align-items: flex-end; margin-top: 20px; }
+
+@media screen and (max-width: 700px) { .linkOutRow { justify-content: flex-start; } }
+
+.assignmentLink { font-family: "IBM Plex Mono", monospace; font-size: 14px; line-height: 18px; color: white; margin-left: 22.5px; margin-right: 22.5px; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
+
+.assignmentLink:hover { text-decoration: underline; }
+
+.projectPageFooter { margin-top: 80px; }
+
+.igLogo { width: 21px; height: 21px; margin-right: 22.5px; }
+
+.linkedInLogo { width: 22.05px; height: 21px; margin-left: 22.5px; margin-right: 22.5px; }
+
+.mailLogo { width: 27px; height: 19px; margin-left: 22.5px; margin-right: 22.5px; }
+
+.resumeLink { font-size: 1.25em; font-family: "Whyte", Verdana, Sans-Serif; color: white; margin-left: 22.5px; padding-bottom: 5px; }
+
+.resumeLink a { text-decoration: none; color: white; }
+
+@media screen and (max-width: 1100px) { .responsiveLargeImage { width: 780px; height: auto; }
+  .largeContainer { width: 80%; }
+  .responsiveVideoLarge { width: 100%; height: auto; }
+  .codeSection { width: 80%; } }
+
+@media screen and (max-width: 815px) { .responsiveSmallImage { width: 40%; height: auto; }
+  .responsiveMediumImage { width: 80%; height: auto; }
+  .responsiveLargeImage { width: 80%; height: auto; }
+  .navBar ul { width: 80%; text-align: center; }
+  .nextPageNav { float: none; }
+  .navBar img { display: none; }
+  .navBar li { margin-left: 32px; margin-right: 32px; }
+  .mediumContainer { width: 80%; }
+  .sectionTitle { font-size: 44px; line-height: 50px; }
+  .pageSubheader { font-size: 22px; line-height: 26px; }
+  .highlight { font-size: 32px; line-height: 42px; }
+  .centered { text-align: left; }
+  .margin-160 { height: 100px; }
+  .margin-100 { height: 60px; }
+  .margin-60 { height: 40px; }
+  .margin-30 { height: 20px; }
+  .margin-20 { height: 14px; }
+  .margin-14 { height: 10px; }
+  .paragraphTitle { font-family: "Whyte-Bold", Verdana, Sans-Serif; font-size: 24px; line-height: 32px; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; padding-top: 9px; }
+  .listTitle { font-family: "IBM Plex Mono", monospace; font-weight: normal; font-size: 20px; line-height: 34px; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
+  .subtitle { font-size: 12px; line-height: 16px; }
+  .lightSubtitle { font-family: "GT Pressura Mono Light"; font-size: 14px; font-weight: normal; line-height: 18px; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
+  .highlightedText { text-align: center; }
+  .highlightedText span { font-family: "IBM Plex Mono", monospace; font-weight: normal; font-size: 14px; line-height: 18px; background-color: rgba(227, 255, 0, 0.3); text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; width: 100%; } }
+
+@media screen and (max-width: 700px) { .projectContainer { width: 100%; }
+  .heroTitle { font-size: 26px; text-align: left; line-height: 38px; }
+  .heroTitleContainer { padding-left: 1.5em; padding-right: 1.5em; }
+  .aboutMeSection { text-align: left; padding-left: 1.5em; padding-right: 1.5em; }
+  .bioText { font-size: 26px; line-height: 38px; }
+  .centerButtonContainer { text-align: left; margin-left: 1.5em; width: auto; }
+  .thumbnailImage { max-width: 100%; height: auto; background-color: red; }
+  .thumbnailDetailsContainer { text-align: left; }
+  .thumbnailTextContainer { padding-left: 1.5em; }
+  .igLogo { margin-left: 1.5em; }
+  .imageCaption { width: 80%; } }

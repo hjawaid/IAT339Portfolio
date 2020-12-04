@@ -1,534 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Portfolio Style Guide</title>
-
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-</head>
-<body>
-
-	<section class="pageContainer styleGuidePage">
-		<section class="navContainer">
-			<nav class="navBar">
-				<ul>
-				<li class="homeNav"><a href="index.html"> <img class ="backButtonArrow" src="img/backArrowWhite.png" alt="Back Arrow">Home</a></li>
-			<!-- 	<li class="nextPageNav"><a href="projectPage-1.html">Next Project<img class ="buttonArrow" src="img/arrowWhite.png" alt="Forward Arrow"></a></li> -->
-				</ul>
-			</nav>
-		</section>
-
-		<div class="margin-60"> </div>
-		<div class="margin-60"> </div>
-
-		<div class="codeSection">
-				<code>
-				HTML <br><br>
-				&lt;section class="navContainer"&gt;<br>
-					&lt;nav class="navBar"&gt;<br>
-						&lt;ul&gt;<br>
-							&lt;li class="homeNav"&gt;&lt;a href="index.html"&gt;&lt;img class ="backButtonArrow" src="img/backArrowWhite.png" alt="Back Arrow"&gt;Home&lt;/a&gt;&lt;/li&gt;;<br>
-							&lt;li class="nextPageNav"&gt;&lt;a href="projectPage-1.html"&gt;Next Project&lt;img class ="buttonArrow" <br>src="img/arrowWhite.png" alt="Forward Arrow"&gt;&lt;/a&gt;&lt;/li&gt;<br>
-						&lt;/ul&gt;<br>
-					&lt;/nav&gt;<br>
-				&lt;/section&gt;<br>
-
-				<br><br><br><br>
-
-				CSS <br><br>
-				.navContainer{ <br>
-				    width: 100%; <br>
-				    background-color: #141313; <br>
-				    position: fixed;<br>
-				    top:0;<br>
-				  z-index: 100;<br>
-				}<br>
-
-				.navBar{<br>
-				    display: inline;<br>
-				    color: white;<br>
-
-				}<br>
-
-				.navBar ul{<br>
-
-				    width: 788px;<br>
-				    margin: 0 auto;<br>
-				/*    background-color: red;*/<br>
-				    text-decoration: none;<br>
-				    list-style: none;<br>
-
-				}<br>
-				.navBar li{<br>
-				    /*background-color: blue;*/<br>
-				    padding-top: 28px;<br>
-				    padding-bottom: 28px;<br>
-				    margin-right: 64px;<br>
-				    display: inline-block;<br>
-				    font-family: 'GT Pressura Mono';<br>
-				    
-				    font-size: 14px;<br>
-				    line-height: 18px;<br>
-
-				    text-rendering: optimizeLegibility !important;<br>
-				    -webkit-font-smoothing: antialiased !important;<br>
-				 
-				}<br>
-
-				.navBar li:hover{<br>
-				    text-decoration: underline;<br>
-				}<br>
-
-				.nextPageNav{<br>
-				    float:right;<br>
-				}<br>
-				</code>		
-			</div>
-		<div class="margin-60"> </div>
-
-		<section class="textStyling sectionDivider">
-			<section class="largeContainer">
-				<h1 class="sectionTitle centered">Text Styling</h1>
-						<div class="margin-14"> </div>
-				<h1 class="sectionTitle">Page / Section Title </h1>
-					<div class="margin-14"> </div>
-				<h2 class="paragraphTitle">Paragraph Titles</h2>
-					<div class="margin-14"> </div>
-
-				<h3 class="listTitle">List Titles</h3>
-					<div class="margin-14"> </div>
-				<h4 class="pageSubheader">Page Subheader</h4>
-					<div class="margin-14"> </div>
-				<h5 class="subtitle">Subtitle</h5>
-					<div class="margin-14"> </div>
-				<h5 class="lightSubtitle">LIGHT SUBTITLE</h5>
-					<div class="margin-14"> </div>
-				<h5 class="highlightedText"><span>HIGHLIGHTED ANNOTATION</span></h5>
-					<div class="margin-14"> </div>
-				<h6 class="highlight">Highlight</h6>
-					<div class="margin-14"> </div>
-				<p class="bodyText">Body Text</p>
-					<div class="margin-14"> </div>
-				<p class="bodyText"><a class="inTextLink" href="mailto:joe@example.com?subject=feedback">In Text Link</a></p>
-
-				<div class="margin-14"> </div>
-				<h1 class="heroTitle styleGuideReverseBackground"> Tagline </h1>
-				<h2 class="projectThumbnailTitle"> Project Thumbnail Title </h2>
-			</section>
-		</section>
-
-		<section class="interactiveElements sectionDivider">
-			<section class="largeContainer">
-				<h1 class="sectionTitle centered">Interactive Elements</h1>
-					<div class="margin-14"> </div>
-				<div class="centerButtonContainer">
-					<a href="">
-						<div class="button">
-						Button<img class ="buttonArrow" src="img/arrowWhite.png" alt="Forward Arrow">		
-						</div>
-					</a>
-				</div>
-				<div class="regularButtonContainer">
-					<a href="">
-						<div class="button">
-						Button<img class ="buttonArrow" src="img/arrowWhite.png" alt="Forward Arrow">		
-						</div>
-					</a>
-				</div>
-				<div class="reverseButtonContainer styleGuideReverseBackground">
-					<a href="">
-						<div class="reverseButton">
-						Button<img class ="buttonArrow" src="img/arrow.png" alt="Forward Arrow">		
-						</div>
-					</a>
-				</div>
-
-				<div class="margin-60"></div>
-			<div class="codeSection">
-				<code>
-					HTML<br><br>
-						&lt;div class="centerButtonContainer"&gt;<br>
-							&lt;a href=""&gt;<br>
-								&lt;div class="button""&gt;<br>
-								Button&lt;img class ="buttonArrow" src="img/arrowWhite.png" alt="Forward Arrow"&gt;	<br>
-								&lt;/div&gt;<br>
-							&lt;/a&gt;<br>
-						&lt;/div&gt;<br>
-						&lt;div class="regularButtonContainer"&gt;<br>
-							&lt;a href=""&gt;<br>
-								&lt;div class="button"&gt;<br>
-								Button&lt;img class ="buttonArrow" src="img/arrowWhite.png" alt="Forward Arrow"&gt;<br>
-								&lt;/div&gt;<br>
-							&lt;/a&gt;<br>
-						&lt;/div&gt;<br>
-						&lt;div class="reverseButtonContainer styleGuideReverseBackground"&gt;<br>
-							&lt;a href=""&gt;<br>
-								&lt;div class="reverseButton"&gt;<br>
-								Button&lt;img class ="buttonArrow" src="img/arrow.png" alt="Forward Arrow"&gt;<br>	
-								&lt;/div&gt;<br>
-							&lt;/a&gt;<br>
-						&lt;/div&gt;<br>
-					<br><br><br><br>
-					CSS <br><br>
-					.button{<br>
-				    
-				    padding-right: 35px;<br>
-				    padding-left: 40px;<br>
-				    padding-top: 18px;<br>
-				    padding-bottom: 18px;<br>
-				    border-radius: 32.5px;<br>
-				    font-family: 'GT Pressura Mono';<br>
-				    
-				    font-size: 14px;<br>
-				    line-height: 18px;<br>
-				    
-				    background-color: black;<br>
-				    display: inline-block;<br>
-				}<br>
-
-				.button:hover{<br>
-    				opacity: 0.8;<br>
-				}<br>
-
-				a .button{<br>
-				    color: white;<br>
-				    
-				    font-size: 14px;<br>
-
-				    text-rendering: optimizeLegibility !important;<br>
-				    -webkit-font-smoothing: antialiased !important;<br>
-				}<br>
-
-
-				.buttonArrow{<br>
-				    width: 10px;<br>
-				    height:6px;<br>
-
-				    margin-left: 25px;<br>
-				    position: relative;<br>
-				    bottom: 1px;<br>
-				}<br>
-
-				.backButtonArrow{<br>
-				    width: 10px;<br>
-				    height:6px;<br>
-				    margin-right: 25px;<br>
-				    position: relative;<br>
-				    bottom: 1px;<br>
-				}<br>
-
-				.centerButtonContainer{<br>
-				    display: inline-block;<br>
-				    text-align: center;<br>
-				    margin: 0 auto;<br>
-				    width: 100%;<br>
-				    /*border: 2px solid red;*/<br>
-				}<br>
-
-				.regularButtonContainer{<br>
-				    display: inline-block;<br>
-				    margin: 0 auto;<br>
-				    width: 100%;<br>
-				    /*border: 2px solid red;*/<br>
-				}<br>
-
-				.reverseButtonContainer{<br>
-				    display: inline-block;<br>
-				    margin: 0 auto;<br>
-				    width: 100%;<br>
-				   
-				    padding-top: 1em;<br>
-				    padding-bottom: 1em;<br>
-				    margin-top: 1em;<br>
-				    margin-bottom: 1em;<br>
-				}<br>
-
-				.reverseButton{<br>
-				    padding-right: 35px;<br>
-				    padding-left: 40px;<br>
-				    padding-top: 18px;<br>
-				    padding-bottom: 18px;<br>
-				    border-radius: 32.5px;<br>
-				    font-family: 'GT Pressura Mono';<br>
-				    color: black;<br>
-				    
-				    font-size: 14px;<br>
-				    line-height: 18px;<br>
-				    
-				    background-color: white;<br>
-				    display: inline-block;<br>
-				}<br>
-
-				.reverseButton:hover{<br>
-				    background-color: #C2C2C2;<br>
-				}<br>
-
-				#contactIconsContainer{<br>
-				    width: 100%;<br>
-				    height: 100%;<br>
-				    
-				    margin-top: 117px;<br>
-				    margin-bottom: 40px;<br>
-				    display: flex;<br>
-				    justify-content: center;<br>
-				    align-items: flex-end;<br>
-				}<br>
-
-				#contactButton{<br>
-
-				    color: black;<br>
-				    margin-top: 29px;<br>
-				    display: inline-block;<br>
-				}<br>
-				</code>		
-			</div>
-			</section>
-		</section>
-
-		<section class="mediaElements sectionDivider">
-
-			<h1 class="sectionTitle centered">Media Elements</h1>
-			<div class="margin-60"> </div>
-
-			<section class="images">
-				<div class="imageContainerFull" id="finishedPortfolioImage-StyleGuide">
-					<img class="responsiveFullImage" src="img/finished-portfolio.png" alt="Design Screenshot">
-					<div class="captionContainer"><h5 class="subtitle imageCaption">Full Width Image</h5></div>
-				</div>
-
-					<div class="margin-60"> </div>
-
-				<div class="imageContainerLarge">
-					<img class="responsiveLargeImage" src="img/finished-portfolio.png" alt="Design Screenshot">
-					<div class="captionContainer"><h5 class="subtitle imageCaption">Large Image</h5></div>
-				</div>
-
-					<div class="margin-60"> </div>
-
-				<div class="imageContainerMedium">
-					<img class="responsiveMediumImage" src="img/finished-portfolio.png" alt="Design Screenshot">
-					<div class="captionContainer"><h5 class="subtitle imageCaption">Medium Image</h5></div>
-				</div>
-
-					<div class="margin-60"> </div>
-
-				<div class="imageContainerSmall">
-					<img class="responsiveSmallImage" src="img/settingsPageTrustedFriends.png" alt="Design Screenshot">
-					<div class="captionContainer"><h5 class="subtitle imageCaption">Small Image</h5></div>
-				</div>
-					<div class="margin-60"> </div>
-				<div class="videoContainerLarge">
-					<iframe class="responsiveVideoLarge" src="https://player.vimeo.com/video/384288046" allow="autoplay; fullscreen" allowfullscreen></iframe>
-					<div class="captionContainer"><h5 class="subtitle imageCaption">Video Prototype</h5></div>
-				</div>
-
-				<div class="margin-60"> </div>
-			</section>
-			<div class="codeSection">
-				<code>
-					HTML <br><br>
-					&lt;div class="imageContainerFull" id="finishedPortfolioImage-StyleGuide"&gt;<br>
-					&lt;img class="responsiveFullImage" src="img/finished-portfolio.png" alt="Design Screenshot"&gt;<br>
-					&lt;div class="captionContainer"&gt;&lt;h5 class="subtitle imageCaption"&gt;Full Width Image&lt;/h5&gt;&lt;/div&gt;
-				&lt;/div&gt;<br>
-
-				&lt;div class="imageContainerLarge"&gt;<br>
-					&lt;img class="responsiveLargeImage" src="img/finished-portfolio.png" alt="Design Screenshot"&gt;<br>
-					&lt;div class="captionContainer"&gt;&lt;h5 class="subtitle imageCaption"&gt;Large Image&lt;/h5&gt;&lt;/div&gt;<br>
-				&lt;/div&gt;<br>
-
-					&lt;div class="margin-60"&gt; &lt;/div&gt;<br>
-
-				&lt;div class="imageContainerMedium"&gt;<br>
-					&lt;img class="responsiveMediumImage" src="img/finished-portfolio.png" alt="Design Screenshot"&gt;<br>
-					&lt;div class="captionContainer"&gt;&lt;h5 class="subtitle imageCaption"&gt;Medium Image&lt;/h5&gt;&lt;/div&gt;<br>
-				&lt;/div&gt;<br>
-
-
-				&lt;div class="imageContainerSmall"&gt;<br>
-					&lt;img class="responsiveSmallImage" src="img/settingsPageTrustedFriends.png" alt="Design Screenshot"&gt;<br>
-					&lt;div class="captionContainer"&gt;&lt;h5 class="subtitle imageCaption"&gt;Small Image&lt;/h5&gt;&lt;/div&gt;<br>
-				&lt;/div&gt;<br>
-					&lt;div class="margin-60"&gt; &lt;/div&gt;<br>
-				&lt;div class="videoContainerLarge"&gt;<br>
-					&lt;iframe class="responsiveVideoLarge" src="https://player.vimeo.com/video/384288046" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;<br>
-					&lt;div class="captionContainer"&gt;&lt;h5 class="subtitle imageCaption"&gt;Video Prototype&lt;/h5&gt;&lt;/div&gt;<br>
-				&lt;/div&gt;<br>
-					<br><br><br><br>
-					CSS <br><br>
-					.imageCaption{<br>
-					    margin: 0 auto;<br>
-					    margin-top: 14px;<br>
-					    width: 40%;<br>
-					    text-align: center;<br>
-					}<br>
-					.captionContainer{<br>
-
-					    width: 100%;<br>
-					}<br>
-					.imageContainerFull{<br>
-					    width: 100%;<br>
-					    height: auto;<br>
-
-					}<br>
-
-					.responsiveFullImage{<br>
-					    width: 100%;<br>
-					    height:auto;<br>
-					    padding: 0;<br>
-					    margin: 0;<br>
-					}<br>
-
-					.imageContainerLarge{<br>
-					    text-align: center;<br>
-					}<br>
-
-					.responsiveLargeImage{<br>
-					    width: 1022px;<br>
-					}<br>
-
-					.imageContainerMedium{<br>
-					    text-align: center;<br>
-					}<br>
-					.responsiveMediumImage{<br>
-					    width: 780px;<br>
-					}<br>
-
-					.imageContainerSmall{<br>
-					    text-align: center;<br>
-					}<br>
-					.responsiveSmallImage{<br>
-					    width: 300px;<br>
-
-					}<br>
-
-					.responsiveVideoLarge{<br>
-					    width:1022px;<br>
-					    height:575px;<br>
-					}<br>
-
-					.videoContainerLarge{<br>
-					    text-align: center;<br>
-					}<br>
-				</code>		
-			</div>
-		</section>
-
-		<section class="combinedElements sectionDivider">
-			<h1 class="sectionTitle centered">Combined Elements</h1>
-			<div class="margin-60"> </div>
-				<div class="titleSection" id="messengerColor">
-					<div class="titleSectionContainer mediumContainer projectInfo"> 
-						<h1 class="sectionTitle projectTitle">How might Messenger use AI to help families capture memories</h1>
-						<h4 class="pageSubheader projectSubtitle">The project that helped me land a Facebook Internship.</h4>
-
-						<div class="reverseButton titleButton">
-							Project Deck<img class ="buttonArrow" src="img/arrow.png" alt="Forward Arrow">
-						</div>
-						<div class ="projectDetailsContainer"> 
-							<div class="projectRole projectInfo">
-								<h5 class="subtitle projectRoleTitle">Role:</h5>
-								<h5 class="lightSubtitle projectRoleBody">SOUND DESIGNER</h5>
-							</div>
-							<div class="projectTimeline projectInfo">
-								<h5 class="subtitle projectTimelineTitle">Timeline:</h5>
-								<h5 class="lightSubtitle projectTimelineBody">APRIL 2019 (2 Weeks)</h5>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="margin-60"></div>
-				<div class="codeSection">
-				<code>
-				CSS <br><br>
-					.projectInfo{<br>
-				    color:white;<br>
-					}<br>
-
-					.projectTitle{<br>
-					}<br>
-
-					.projectSubtitle{<br>
-					    margin-top: 5px;<br>
-					}<br>
-
-					.titleButton{<br>
-					    margin-top: 42px;<br>
-					}<br>
-
-					.projectDetailsContainer{<br>
-					    display: inline-flex;<br>
-
-					    width: 100%;<br>
-					    height: 100%;<br>
-
-					    margin-top: 100px;<br>
-					    margin-bottom: 60px;<br>
-
-					}<br>
-
-					.projectRole{<br>
-					    margin-right: 20%;<br>
-					}<br>
-				</code>		
-			</div>
-			<section class="allProjectsContainer">
-					<div class="projectContainer" id="projectContainer-1"><img class="thumbnailImage" src="img/facebookThumbnail.png" alt="Thumbnail Image Facebook Portal">
-						<div class="thumbnailDetailsContainer">
-							<div class="thumbnailTextContainer">
-								<h5 class="subtitle projectDuration">2 months</h5>
-								<h1 class=projectThumbnailTitle> Product Design @ Facebook </h1>
-								<h5 class="subtitle projectType">INTERNSHIP</h5>
-								<div class="reverseButtonContainer">
-									<a href="projectPage-1.html">
-										<div class="reverseButton">
-										View Project<img class ="buttonArrow" src="img/arrow.png" alt="Forward Arrow">		
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-			</section>	
-
-		</section>
-
-		<section class="contentTemplates sectionDivider">
-			<h1 class="sectionTitle centered">Content Templates</h1>
-			<div class="margin-60"> </div>
-
-			<section class="largeContainer">
-				<h6 class="highlight centered">Highlight Example: Moments like seeing your nephew walk for the first time, your cousin announcing her engagement, or even little moments like laughing along with your family.</h6>
-					<div class="margin-10"> </div>
-				<h5 class="highlightedText centered"><span>HIGHLIGHTED ANNOTATION</span></h5>
-			</section>
-				<div class="margin-60"> </div>
-			<section class="textSection mediumContainer">
-				<div class="textContainer">
-					<h2 class="paragraphTitle">Paragraph Title</h2>
-					<div class="margin-14"></div>
-					<p class="bodyText">Body text example: One of the most important facets in ensuring that user’s feel comfortable sharing their data with an app is giving them control. One simple way this was implemented is allowing the ability to turn the feature on and off. Furthermore, I explored how users may want to turn the feature on only for certain people.</p>
-				</div>
-			</section> 
-		</section>
-			<div class="margin-60"> </div>
-			<footer class="contactFooter" id="homeFooter">
-				<div class="contactRow">
-					<a href="https://www.instagram.com/hammadjawaid97/?hl=en" target="_blank"><div class="instagramContactLink"> <img class ="igLogo" src="img/igIcon.png" alt="Instagram Icon"> </div> </a>
-					<div class="linkedInContactLink"><a href="https://www.linkedin.com/in/hammad-jawaid-97585389/" target="_blank"> <img class ="linkedInLogo" src="img/linkedInIcon.png" alt="LinkedIn Icon"> </a></div> 
-					<div class="emailContactLink"><a href="mailto:97hammad.jawaid@gmail.com" target="_blank"> <img class ="mailLogo" src="img/mailIcon.png" alt="Mail Icon"> </a> </div>
-					<div class="resumeLink"><a href="downloadFiles/HammadJawaid-Resume-2021.pdf" download target="_blank">Resume</a></div>
-				</div>
-				<div class="linkOutRow">
-					<div class="assignmentLink"><a href="citations.html">Citations</a></div>
-					<div class="assignmentLink"><a href="https://github.com/hjawaid/IAT339Portfolio" target="_blank">Github</a></div>
-					<div class="assignmentLink"><a href="style-guide.html">Style Guide</a></div>
-				</div>
-			</footer>
-	</section>
-</body>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Portfolio Style Guide</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+   </head>
+   <body>
+      <section class="pageContainer styleGuidePage">
+         <section class="navContainer">
+            <nav class="navBar">
+               <ul>
+                  <li class="homeNav"><a href="index.html"> <img class ="backButtonArrow" src="img/backArrowWhite.png" alt="Back Arrow">Home</a></li>
+                  <!-- 	<li class="nextPageNav"><a href="projectPage-1.html">Next Project<img class ="buttonArrow" src="img/arrowWhite.png" alt="Forward Arrow"></a></li> -->
+               </ul>
+            </nav>
+         </section>
+         <div class="margin-60"> </div>
+         <div class="margin-60"> </div>
+         <h1 class="sectionTitle centered">Style Guide</h1>
+      	 <div class="margin-60"> </div>
+         <div class="codeSection">
+            <code>
+            HTML <br><br>
+            &lt;section class="navContainer"&gt;<br>
+            &lt;nav class="navBar"&gt;<br>
+            &lt;ul&gt;<br>
+            &lt;li class="homeNav"&gt;&lt;a href="index.html"&gt;&lt;img class ="backButtonArrow" src="img/backArrowWhite.png" alt="Back Arrow"&gt;Home&lt;/a&gt;&lt;/li&gt;;<br>
+            &lt;li class="nextPageNav"&gt;&lt;a href="projectPage-1.html"&gt;Next Project&lt;img class ="buttonArrow" <br>src="img/arrowWhite.png" alt="Forward Arrow"&gt;&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+            &lt;/nav&gt;<br>
+            &lt;/section&gt;<br>
+            <br><br><br><br>
+            CSS <br><br>
+            .navContainer{ <br>
+            width: 100%; <br>
+            background-color: #141313; <br>
+            position: fixed;<br>
+            top:0;<br>
+            z-index: 100;<br>
+            }<br>
+            .navBar{<br>
+            display: inline;<br>
+            color: white;<br>
+            }<br>
+            .navBar ul{<br>
+            width: 788px;<br>
+            margin: 0 auto;<br>
+            /*    background-color: red;*/<br>
+            text-decoration: none;<br>
+            list-style: none;<br>
+            }<br>
+            .navBar li{<br>
+            /*background-color: blue;*/<br>
+            padding-top: 28px;<br>
+            padding-bottom: 28px;<br>
+            margin-right: 64px;<br>
+            display: inline-block;<br>
+            font-family: 'GT Pressura Mono';<br>
+            font-size: 14px;<br>
+            line-height: 18px;<br>
+            text-rendering: optimizeLegibility !important;<br>
+            -webkit-font-smoothing: antialiased !important;<br>
+            }<br>
+            .navBar li:hover{<br>
+            text-decoration: underline;<br>
+            }<br>
+            .nextPageNav{<br>
+            float:right;<br>
+            }<br>
+            </code>		
+         </div>
+         <div class="margin-60"> </div>
+         <section class="textStyling sectionDivider">
+            <section class="largeContainer">
+               <h1 class="sectionTitle centered">Text Styling</h1>
+               <div class="margin-14"> </div>
+               <h1 class="sectionTitle">Page / Section Title </h1>
+               <div class="margin-14"> </div>
+               <h2 class="paragraphTitle">Paragraph Titles</h2>
+               <div class="margin-14"> </div>
+               <h3 class="listTitle">List Titles</h3>
+               <div class="margin-14"> </div>
+               <h4 class="pageSubheader">Page Subheader</h4>
+               <div class="margin-14"> </div>
+               <h5 class="subtitle">Subtitle</h5>
+               <div class="margin-14"> </div>
+               <h5 class="lightSubtitle">LIGHT SUBTITLE</h5>
+               <div class="margin-14"> </div>
+               <h5 class="highlightedText"><span>HIGHLIGHTED ANNOTATION</span></h5>
+               <div class="margin-14"> </div>
+               <h6 class="highlight">Highlight</h6>
+               <div class="margin-14"> </div>
+               <p class="bodyText">Body Text</p>
+               <div class="margin-14"> </div>
+               <p class="bodyText"><a class="inTextLink" href="mailto:joe@example.com?subject=feedback">In Text Link</a></p>
+               <div class="margin-14"> </div>
+               <h1 class="heroTitle styleGuideReverseBackground"> Tagline </h1>
+               <h2 class="projectThumbnailTitle"> Project Thumbnail Title </h2>
+            </section>
+         </section>
+         <section class="interactiveElements sectionDivider">
+            <section class="largeContainer">
+               <h1 class="sectionTitle centered">Interactive Elements</h1>
+               <div class="margin-14"> </div>
+               <div class="centerButtonContainer">
+                  <a href="">
+                     <div class="button">
+                        Button<img class ="buttonArrow" src="img/arrowWhite.png" alt="Forward Arrow">		
+                     </div>
+                  </a>
+               </div>
+               <div class="regularButtonContainer">
+                  <a href="">
+                     <div class="button">
+                        Button<img class ="buttonArrow" src="img/arrowWhite.png" alt="Forward Arrow">		
+                     </div>
+                  </a>
+               </div>
+               <div class="reverseButtonContainer styleGuideReverseBackground">
+                  <a href="">
+                     <div class="reverseButton">
+                        Button<img class ="buttonArrow" src="img/arrow.png" alt="Forward Arrow">		
+                     </div>
+                  </a>
+               </div>
+               <div class="margin-60"></div>
+               <div class="codeSection">
+                  <code>
+                  HTML<br><br>
+                  &lt;div class="centerButtonContainer"&gt;<br>
+                  &lt;a href=""&gt;<br>
+                  &lt;div class="button""&gt;<br>
+                  Button&lt;img class ="buttonArrow" src="img/arrowWhite.png" alt="Forward Arrow"&gt;	<br>
+                  &lt;/div&gt;<br>
+                  &lt;/a&gt;<br>
+                  &lt;/div&gt;<br>
+                  &lt;div class="regularButtonContainer"&gt;<br>
+                  &lt;a href=""&gt;<br>
+                  &lt;div class="button"&gt;<br>
+                  Button&lt;img class ="buttonArrow" src="img/arrowWhite.png" alt="Forward Arrow"&gt;<br>
+                  &lt;/div&gt;<br>
+                  &lt;/a&gt;<br>
+                  &lt;/div&gt;<br>
+                  &lt;div class="reverseButtonContainer styleGuideReverseBackground"&gt;<br>
+                  &lt;a href=""&gt;<br>
+                  &lt;div class="reverseButton"&gt;<br>
+                  Button&lt;img class ="buttonArrow" src="img/arrow.png" alt="Forward Arrow"&gt;<br>	
+                  &lt;/div&gt;<br>
+                  &lt;/a&gt;<br>
+                  &lt;/div&gt;<br>
+                  <br><br><br><br>
+                  CSS <br><br>
+                  .button{<br>
+                  padding-right: 35px;<br>
+                  padding-left: 40px;<br>
+                  padding-top: 18px;<br>
+                  padding-bottom: 18px;<br>
+                  border-radius: 32.5px;<br>
+                  font-family: 'GT Pressura Mono';<br>
+                  font-size: 14px;<br>
+                  line-height: 18px;<br>
+                  background-color: black;<br>
+                  display: inline-block;<br>
+                  }<br>
+                  .button:hover{<br>
+                  opacity: 0.8;<br>
+                  }<br>
+                  a .button{<br>
+                  color: white;<br>
+                  font-size: 14px;<br>
+                  text-rendering: optimizeLegibility !important;<br>
+                  -webkit-font-smoothing: antialiased !important;<br>
+                  }<br>
+                  .buttonArrow{<br>
+                  width: 10px;<br>
+                  height:6px;<br>
+                  margin-left: 25px;<br>
+                  position: relative;<br>
+                  bottom: 1px;<br>
+                  }<br>
+                  .backButtonArrow{<br>
+                  width: 10px;<br>
+                  height:6px;<br>
+                  margin-right: 25px;<br>
+                  position: relative;<br>
+                  bottom: 1px;<br>
+                  }<br>
+                  .centerButtonContainer{<br>
+                  display: inline-block;<br>
+                  text-align: center;<br>
+                  margin: 0 auto;<br>
+                  width: 100%;<br>
+                  /*border: 2px solid red;*/<br>
+                  }<br>
+                  .regularButtonContainer{<br>
+                  display: inline-block;<br>
+                  margin: 0 auto;<br>
+                  width: 100%;<br>
+                  /*border: 2px solid red;*/<br>
+                  }<br>
+                  .reverseButtonContainer{<br>
+                  display: inline-block;<br>
+                  margin: 0 auto;<br>
+                  width: 100%;<br>
+                  padding-top: 1em;<br>
+                  padding-bottom: 1em;<br>
+                  margin-top: 1em;<br>
+                  margin-bottom: 1em;<br>
+                  }<br>
+                  .reverseButton{<br>
+                  padding-right: 35px;<br>
+                  padding-left: 40px;<br>
+                  padding-top: 18px;<br>
+                  padding-bottom: 18px;<br>
+                  border-radius: 32.5px;<br>
+                  font-family: 'GT Pressura Mono';<br>
+                  color: black;<br>
+                  font-size: 14px;<br>
+                  line-height: 18px;<br>
+                  background-color: white;<br>
+                  display: inline-block;<br>
+                  }<br>
+                  .reverseButton:hover{<br>
+                  background-color: #C2C2C2;<br>
+                  }<br>
+                  #contactIconsContainer{<br>
+                  width: 100%;<br>
+                  height: 100%;<br>
+                  margin-top: 117px;<br>
+                  margin-bottom: 40px;<br>
+                  display: flex;<br>
+                  justify-content: center;<br>
+                  align-items: flex-end;<br>
+                  }<br>
+                  #contactButton{<br>
+                  color: black;<br>
+                  margin-top: 29px;<br>
+                  display: inline-block;<br>
+                  }<br>
+                  </code>		
+               </div>
+            </section>
+         </section>
+         <section class="mediaElements sectionDivider">
+            <h1 class="sectionTitle centered">Media Elements</h1>
+            <div class="margin-60"> </div>
+            <section class="images">
+               <div class="imageContainerFull" id="finishedPortfolioImage-StyleGuide">
+                  <img class="responsiveFullImage" src="img/finished-portfolio.png" alt="Design Screenshot">
+                  <div class="captionContainer">
+                     <h5 class="subtitle imageCaption">Full Width Image</h5>
+                  </div>
+               </div>
+               <div class="margin-60"> </div>
+               <div class="imageContainerLarge">
+                  <img class="responsiveLargeImage" src="img/finished-portfolio.png" alt="Design Screenshot">
+                  <div class="captionContainer">
+                     <h5 class="subtitle imageCaption">Large Image</h5>
+                  </div>
+               </div>
+               <div class="margin-60"> </div>
+               <div class="imageContainerMedium">
+                  <img class="responsiveMediumImage" src="img/finished-portfolio.png" alt="Design Screenshot">
+                  <div class="captionContainer">
+                     <h5 class="subtitle imageCaption">Medium Image</h5>
+                  </div>
+               </div>
+               <div class="margin-60"> </div>
+               <div class="imageContainerSmall">
+                  <img class="responsiveSmallImage" src="img/settingsPageTrustedFriends.png" alt="Design Screenshot">
+                  <div class="captionContainer">
+                     <h5 class="subtitle imageCaption">Small Image</h5>
+                  </div>
+               </div>
+               <div class="margin-60"> </div>
+               <div class="videoContainerLarge">
+                  <iframe class="responsiveVideoLarge" src="https://player.vimeo.com/video/384288046" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                  <div class="captionContainer">
+                     <h5 class="subtitle imageCaption">Video Prototype</h5>
+                  </div>
+               </div>
+               <div class="margin-60"> </div>
+            </section>
+            <div class="codeSection">
+               <code>
+               HTML <br><br>
+               &lt;div class="imageContainerFull" id="finishedPortfolioImage-StyleGuide"&gt;<br>
+               &lt;img class="responsiveFullImage" src="img/finished-portfolio.png" alt="Design Screenshot"&gt;<br>
+               &lt;div class="captionContainer"&gt;&lt;h5 class="subtitle imageCaption"&gt;Full Width Image&lt;/h5&gt;&lt;/div&gt;
+               &lt;/div&gt;<br>
+               &lt;div class="imageContainerLarge"&gt;<br>
+               &lt;img class="responsiveLargeImage" src="img/finished-portfolio.png" alt="Design Screenshot"&gt;<br>
+               &lt;div class="captionContainer"&gt;&lt;h5 class="subtitle imageCaption"&gt;Large Image&lt;/h5&gt;&lt;/div&gt;<br>
+               &lt;/div&gt;<br>
+               &lt;div class="margin-60"&gt; &lt;/div&gt;<br>
+               &lt;div class="imageContainerMedium"&gt;<br>
+               &lt;img class="responsiveMediumImage" src="img/finished-portfolio.png" alt="Design Screenshot"&gt;<br>
+               &lt;div class="captionContainer"&gt;&lt;h5 class="subtitle imageCaption"&gt;Medium Image&lt;/h5&gt;&lt;/div&gt;<br>
+               &lt;/div&gt;<br>
+               &lt;div class="imageContainerSmall"&gt;<br>
+               &lt;img class="responsiveSmallImage" src="img/settingsPageTrustedFriends.png" alt="Design Screenshot"&gt;<br>
+               &lt;div class="captionContainer"&gt;&lt;h5 class="subtitle imageCaption"&gt;Small Image&lt;/h5&gt;&lt;/div&gt;<br>
+               &lt;/div&gt;<br>
+               &lt;div class="margin-60"&gt; &lt;/div&gt;<br>
+               &lt;div class="videoContainerLarge"&gt;<br>
+               &lt;iframe class="responsiveVideoLarge" src="https://player.vimeo.com/video/384288046" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;<br>
+               &lt;div class="captionContainer"&gt;&lt;h5 class="subtitle imageCaption"&gt;Video Prototype&lt;/h5&gt;&lt;/div&gt;<br>
+               &lt;/div&gt;<br>
+               <br><br><br><br>
+               CSS <br><br>
+               .imageCaption{<br>
+               margin: 0 auto;<br>
+               margin-top: 14px;<br>
+               width: 40%;<br>
+               text-align: center;<br>
+               }<br>
+               .captionContainer{<br>
+               width: 100%;<br>
+               }<br>
+               .imageContainerFull{<br>
+               width: 100%;<br>
+               height: auto;<br>
+               }<br>
+               .responsiveFullImage{<br>
+               width: 100%;<br>
+               height:auto;<br>
+               padding: 0;<br>
+               margin: 0;<br>
+               }<br>
+               .imageContainerLarge{<br>
+               text-align: center;<br>
+               }<br>
+               .responsiveLargeImage{<br>
+               width: 1022px;<br>
+               }<br>
+               .imageContainerMedium{<br>
+               text-align: center;<br>
+               }<br>
+               .responsiveMediumImage{<br>
+               width: 780px;<br>
+               }<br>
+               .imageContainerSmall{<br>
+               text-align: center;<br>
+               }<br>
+               .responsiveSmallImage{<br>
+               width: 300px;<br>
+               }<br>
+               .responsiveVideoLarge{<br>
+               width:1022px;<br>
+               height:575px;<br>
+               }<br>
+               .videoContainerLarge{<br>
+               text-align: center;<br>
+               }<br>
+               </code>		
+            </div>
+         </section>
+         <section class="combinedElements sectionDivider">
+            <h1 class="sectionTitle centered">Combined Elements</h1>
+            <div class="margin-60"> </div>
+            <div class="titleSection" id="messengerColor">
+               <div class="titleSectionContainer mediumContainer projectInfo">
+                  <h1 class="sectionTitle projectTitle">How might Messenger use AI to help families capture memories</h1>
+                  <h4 class="pageSubheader projectSubtitle">The project that helped me land a Facebook Internship.</h4>
+                  <div class="reverseButton titleButton">
+                     Project Deck<img class ="buttonArrow" src="img/arrow.png" alt="Forward Arrow">
+                  </div>
+                  <div class ="projectDetailsContainer">
+                     <div class="projectRole projectInfo">
+                        <h5 class="subtitle projectRoleTitle">Role:</h5>
+                        <h5 class="lightSubtitle projectRoleBody">SOUND DESIGNER</h5>
+                     </div>
+                     <div class="projectTimeline projectInfo">
+                        <h5 class="subtitle projectTimelineTitle">Timeline:</h5>
+                        <h5 class="lightSubtitle projectTimelineBody">APRIL 2019 (2 Weeks)</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="margin-60"></div>
+            <div class="codeSection">
+               <code>
+               CSS <br><br>
+               .projectInfo{<br>
+               color:white;<br>
+               }<br>
+               .projectTitle{<br>
+               }<br>
+               .projectSubtitle{<br>
+               margin-top: 5px;<br>
+               }<br>
+               .titleButton{<br>
+               margin-top: 42px;<br>
+               }<br>
+               .projectDetailsContainer{<br>
+               display: inline-flex;<br>
+               width: 100%;<br>
+               height: 100%;<br>
+               margin-top: 100px;<br>
+               margin-bottom: 60px;<br>
+               }<br>
+               .projectRole{<br>
+               margin-right: 20%;<br>
+               }<br>
+               </code>		
+            </div>
+            <section class="allProjectsContainer">
+               <div class="projectContainer" id="projectContainer-1">
+                  <img class="thumbnailImage" src="img/facebookThumbnail.png" alt="Thumbnail Image Facebook Portal">
+                  <div class="thumbnailDetailsContainer">
+                     <div class="thumbnailTextContainer">
+                        <h5 class="subtitle projectDuration">2 months</h5>
+                        <h1 class=projectThumbnailTitle> Product Design @ Facebook </h1>
+                        <h5 class="subtitle projectType">INTERNSHIP</h5>
+                        <div class="reverseButtonContainer">
+                           <a href="projectPage-1.html">
+                              <div class="reverseButton">
+                                 View Project<img class ="buttonArrow" src="img/arrow.png" alt="Forward Arrow">		
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </section>
+         <section class="contentTemplates sectionDivider">
+            <h1 class="sectionTitle centered">Content Templates</h1>
+            <div class="margin-60"> </div>
+            <section class="largeContainer">
+               <h6 class="highlight centered">Highlight Example: Moments like seeing your nephew walk for the first time, your cousin announcing her engagement, or even little moments like laughing along with your family.</h6>
+               <div class="margin-10"> </div>
+               <h5 class="highlightedText centered"><span>HIGHLIGHTED ANNOTATION</span></h5>
+            </section>
+            <div class="margin-60"> </div>
+            <section class="textSection mediumContainer">
+               <div class="textContainer">
+                  <h2 class="paragraphTitle">Paragraph Title</h2>
+                  <div class="margin-14"></div>
+                  <p class="bodyText">Body text example: One of the most important facets in ensuring that user’s feel comfortable sharing their data with an app is giving them control. One simple way this was implemented is allowing the ability to turn the feature on and off. Furthermore, I explored how users may want to turn the feature on only for certain people.</p>
+               </div>
+            </section>
+         </section>
+         <div class="margin-60"> </div>
+         <footer class="contactFooter" id="homeFooter">
+            <div class="contactRow">
+               <a href="https://www.instagram.com/hammadjawaid97/?hl=en" target="_blank">
+                  <div class="instagramContactLink"> <img class ="igLogo" src="img/igIcon.png" alt="Instagram Icon"> </div>
+               </a>
+               <div class="linkedInContactLink"><a href="https://www.linkedin.com/in/hammad-jawaid-97585389/" target="_blank"> <img class ="linkedInLogo" src="img/linkedInIcon.png" alt="LinkedIn Icon"> </a></div>
+               <div class="emailContactLink"><a href="mailto:97hammad.jawaid@gmail.com" target="_blank"> <img class ="mailLogo" src="img/mailIcon.png" alt="Mail Icon"> </a> </div>
+               <div class="resumeLink"><a href="downloadFiles/HammadJawaid-Resume-2021.pdf" download target="_blank">Resume</a></div>
+            </div>
+            <div class="linkOutRow">
+               <div class="assignmentLink"><a href="citations.html">Citations</a></div>
+               <div class="assignmentLink"><a href="https://github.com/hjawaid/IAT339Portfolio" target="_blank">Github</a></div>
+               <div class="assignmentLink"><a href="style-guide.html">Style Guide</a></div>
+            </div>
+         </footer>
+      </section>
+   </body>
 </html>
