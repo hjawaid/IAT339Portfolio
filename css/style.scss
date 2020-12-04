@@ -532,6 +532,9 @@ a .button {
   width: 300px;
 }
 
+iframe{
+  border:none;
+}
 .responsiveVideoLarge {
   width: 1022px;
   height: 575px;
@@ -606,10 +609,6 @@ a .button {
 
 .projectPageFooter {
   margin-top: 80px;
-}
-
-#homeFooter {
-  margin-top: 50px;
 }
 
 .igLogo {
