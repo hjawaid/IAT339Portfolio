@@ -295,7 +295,7 @@ a:visited {
 }
 
 .pageSubheader {
-  font-family: "gt-walsheim-web";
+  font-family: "gt-walsheim-web", Helvetica, Sans Serif;
   font-size: 26px;
   font-weight: normal;
   letter-spacing: -0.21px;
@@ -350,7 +350,7 @@ a:visited {
 }
 
 .bodyText {
-  font-family: "gt-walsheim-web";
+  font-family: "gt-walsheim-web", Helvetica, Sans Serif;
   font-weight: normal;
   font-size: 20px;
   line-height: 34px;
