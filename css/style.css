@@ -3,7 +3,7 @@
 /* COLORS */
 /* MIXIMS */
 /* END OF VARIABLES--------------------- */
-* { margin: 0; padding: 0; }
+* { margin: 0; padding: 0; overflow-wrap: break-word; }
 
 body { background-color: #0D0D0D; }
 
@@ -204,7 +204,7 @@ iframe { border: none; }
 @media screen and (max-width: 1100px) { .responsiveLargeImage { width: 780px; height: auto; }
   .largeContainer { width: 80%; }
   .responsiveVideoLarge { width: 100%; height: auto; }
-  .codeSection { width: 80%; } }
+  .codeSection { width: 60%; } }
 
 @media screen and (max-width: 815px) { .responsiveSmallImage { width: 40%; height: auto; }
   .responsiveMediumImage { width: 80%; height: auto; }
