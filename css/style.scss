@@ -21,7 +21,7 @@ $projectTwoThemeColor: #E6FBEA;
 @mixin heroTitleStyle{
   line-height: 1.153;
   font-size: 3.25em;
-  font-family: Whyte, Sans-Serif;
+  font-family: "Whyte", Verdana, Sans-Serif;
   font-weight: normal;
   color: white;
   text-rendering: optimizeLegibility !important;
@@ -301,7 +301,7 @@ a:visited {
 }
 
 .projectThumbnailTitle {
-  font-family: Whyte-Bold, Verdana, Sans-Serif;
+  font-family: "Whyte-Bold", Verdana, Sans-Serif;
   font-size: 32px;
   font-weight: normal;
   line-height: 46px;
@@ -633,7 +633,7 @@ iframe{
 
 .resumeLink {
   font-size: 1.25em;
-  font-family: Whyte;
+  font-family: "Whyte", Verdana, Sans-Serif;;
   color: $textColorReverse;
   margin-left: 22.5px;
   padding-bottom: 5px;
@@ -745,7 +745,7 @@ iframe{
   }
 
   .paragraphTitle {
-    font-family: "Whyte-Bold";
+    font-family: "Whyte-Bold", Verdana, Sans-Serif;
     font-size: 24px;
     line-height: 32px;
     text-rendering: optimizeLegibility !important;
