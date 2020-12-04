@@ -95,7 +95,7 @@ body {
 .heroSection {
   width: 100%;
   height: 100%;
-  padding-top: 188px;
+  padding-top: 160px;
   background-color: #0D0D0D;
 }
 
@@ -554,11 +554,23 @@ a .button {
   align-items: flex-end;
 }
 
+@media screen and (max-width: 700px) {
+  .contactRow {
+    justify-content: flex-start;
+  }
+}
+
 .linkOutRow {
-  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .linkOutRow {
+    justify-content: flex-start;
+  }
 }
 
 .assignmentLink {
@@ -566,6 +578,14 @@ a .button {
   font-size: 14px;
   line-height: 18px;
   color: white;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.assignmentLink:hover {
+  text-decoration: underline;
 }
 
 .projectPageFooter {
@@ -602,11 +622,17 @@ a .button {
   color: white;
   margin-left: 22.5px;
   padding-bottom: 5px;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 .resumeLink a {
   text-decoration: none;
   color: white;
+}
+
+.resumeLink a:hover{
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1100px) {
@@ -769,5 +795,8 @@ a .button {
   }
   .thumbnailTextContainer {
     padding-left: 1.5em;
+  }
+  .igLogo {
+    margin-left: 1.5em;
   }
 }

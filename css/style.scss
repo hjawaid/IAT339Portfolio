@@ -11,6 +11,8 @@ $codeBlockBackground: lightgrey;
 $projectOneThemeColor: #E6F9FB;
 $projectTwoThemeColor: #E6FBEA;
 
+
+
 /* MIXIMS */
 
 @mixin heroTitleStyle{
@@ -41,6 +43,16 @@ $projectTwoThemeColor: #E6FBEA;
   font-size: 14px;
   line-height: 18px;
   display: inline-block;
+}
+
+@mixin footerRowStyle{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  @media screen and (max-width: 700px){
+  justify-content: flex-start;
+  }
 }
 
 /* END OF VARIABLES--------------------- */
@@ -558,16 +570,12 @@ a .button {
 }
 
 .contactRow{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  @include footerRowStyle;
 }
 
 .linkOutRow{
+  @include footerRowStyle;
   margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
 .assignmentLink{
@@ -575,7 +583,16 @@ a .button {
   font-size: 14px;
   line-height: 18px;
   color: white;
+  margin-left:22.5px;
+  margin-right:22.5px;
 
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+
+}
+
+.assignmentLink:hover{
+  text-decoration: underline;
 }
 
 .projectPageFooter {
@@ -811,5 +828,9 @@ a .button {
 
   .thumbnailTextContainer {
     padding-left: 1.5em;
+  }
+
+  .igLogo{
+  margin-left:1.5em;
   }
 }
