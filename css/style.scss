@@ -52,10 +52,6 @@ $projectTwoThemeColor: #E6FBEA;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-
-  @media screen and (max-width: 700px){
-  justify-content: flex-start;
-  }
 }
 
 /* END OF VARIABLES--------------------- */
@@ -837,10 +833,6 @@ iframe{
 
   .thumbnailTextContainer {
     padding-left: 1.5em;
-  }
-
-  .igLogo{
-  margin-left:1.5em;
   }
 
   .imageCaption {

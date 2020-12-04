@@ -179,11 +179,7 @@ iframe { border: none; }
 
 .contactRow { display: flex; justify-content: center; align-items: flex-end; }
 
-@media screen and (max-width: 700px) { .contactRow { justify-content: flex-start; } }
-
 .linkOutRow { display: flex; justify-content: center; align-items: flex-end; margin-top: 20px; }
-
-@media screen and (max-width: 700px) { .linkOutRow { justify-content: flex-start; } }
 
 .assignmentLink { font-family: "IBM Plex Mono", monospace; font-size: 14px; line-height: 18px; color: white; margin-left: 22.5px; margin-right: 22.5px; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
 
@@ -240,5 +236,4 @@ iframe { border: none; }
   .thumbnailImage { max-width: 100%; height: auto; background-color: red; }
   .thumbnailDetailsContainer { text-align: left; }
   .thumbnailTextContainer { padding-left: 1.5em; }
-  .igLogo { margin-left: 1.5em; }
   .imageCaption { width: 80%; } }
