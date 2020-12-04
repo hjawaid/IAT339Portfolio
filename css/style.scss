@@ -570,7 +570,9 @@ a .button {
 .contactFooter {
   width: 100%;
   height: 100%;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: $backgroundColorDark;
 }
 
 .contactRow{
